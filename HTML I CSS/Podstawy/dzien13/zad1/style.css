@@ -1,0 +1,69 @@
+/*powyżej 1600px czyli 1601px i więcej*/
+
+body {
+  background-color: rgb(255, 0, 0);
+}
+
+div {
+  font-size: 60px;
+  color: white;
+}
+
+div.s1 {
+  display: block;
+}
+
+div.s2 {
+  display: none;
+}
+
+div.s3 {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+  body {
+    background-color: rgb(255, 255, 0);
+  }
+
+  div.s1 {
+    display: none;
+  }
+  div.s2 {
+    display: block;
+    color: black
+  }
+}
+
+@media (max-width: 1024px) {
+
+  body {
+    background-color: rgb(100, 50, 150);
+  }
+
+  div.s2 {
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+
+  body {
+    background-color: rgb(80, 150, 10);
+  }
+
+  div.s2 {
+    display: none;
+  }
+
+  div.s3 {
+    display: block;
+  }
+}
+
+@media (max-width: 360px) {
+
+  body {
+    background-color: rgb(30, 30, 200);
+  }
+}

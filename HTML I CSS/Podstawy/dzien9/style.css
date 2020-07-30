@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav + section {
+  height: 30vw;
+  background-color: rgb(220, 220, 220);
+}
+
+body > nav {
+  background-color: #666;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+nav > ul {
+  padding: 30px 0;
+  max-width: 1024px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  margin-right: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-family: arial;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  width: 180px;
+  border: 1px solid #fff;
+}
+
+nav ul li a:hover {
+  color: chartreuse;
+  border-color: chartreuse;
+
+}

@@ -1,0 +1,98 @@
+<!-- 
+ZADANIE DLA CIEBIE!!!
+
+1. Strona ma mieć w pionie conajmniej 150% okna przeglądarki (pasek pionowy) 
+2. Menu ma być wysuwane z dołu
+3. Zamiast ikon hamburgera, pobieramy z font-awsome jedną strzałkę
+4. Strałka idzie do góry i obraca się o 180deg, zachowuje tą samą odległość od menu
+5. Menu jest częsciowo widoczne. Ma 300px, domyslnie 30px jest widoczne
+6. Obsługa zdarzenia click JS
+7. Użyj klasy "on" dla elementów, które są aktywne (dodawaj/odejmuj klasę on po kliknięciu)
+
+Strukturę początkową zróbmy razem :)
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu Arrow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates dolore, cumque cupiditate
+                necessitatibus laborum architecto laboriosam tempore maxime, quis deleniti rerum doloribus ratione
+                blanditiis? Doloribus cum vel voluptatum exercitationem hic!
+                Labore tenetur cupiditate reprehenderit laudantium voluptates doloribus obcaecati eligendi. Maxime optio
+                nulla tempora, itaque assumenda debitis necessitatibus iste vitae. Optio iure corrupti amet repellendus
+                repellat ipsa laudantium maiores, veniam omnis.
+                Ratione dolor autem voluptate accusantium repellat iste possimus nostrum quis pariatur quidem ad
+                suscipit, at necessitatibus mollitia nisi ea qui, blanditiis nobis. Provident quaerat corrupti odio ad
+                vitae nobis asperiores?
+                Earum quibusdam beatae nam quasi, veritatis cum quas illo voluptates blanditiis fuga nihil libero autem
+                modi rem dolor asperiores voluptatum, nesciunt a dolore exercitationem dolorum iusto id deleniti soluta.
+                Sed!
+                Fugit id error voluptatum praesentium similique ratione possimus asperiores reprehenderit omnis
+                cupiditate, voluptatem cum molestias ipsum natus assumenda dicta odio velit recusandae ipsa non in
+                labore eum libero magni? Eligendi.
+                Itaque quam aut ea, animi dolore iste nobis cumque quaerat at tempora neque eos temporibus delectus a
+                necessitatibus deleniti placeat recusandae excepturi? Aspernatur praesentium molestias corrupti
+                veritatis? Officia, omnis accusantium?
+                Quos eaque illo nobis! Alias quis, excepturi, explicabo facilis nihil ad nesciunt quam distinctio fugiat
+                numquam repellat earum. Aperiam nesciunt, inventore iure officiis impedit dignissimos architecto ab
+                maiores quisquam aspernatur.
+                Distinctio sunt repellat magnam quos dolorem incidunt facilis est similique totam alias sed quidem
+                consectetur assumenda cupiditate corporis pariatur quis atque nemo, debitis, tempore facere asperiores
+                illum veritatis. Quaerat, atque?
+                Laboriosam harum quibusdam repudiandae odit necessitatibus inventore esse nam omnis veniam, dolore
+                nesciunt eius! Esse quam facere nihil odio accusantium quod, blanditiis totam aliquam quia
+                necessitatibus eum praesentium illum fugiat.
+                Magnam, laudantium hic. Necessitatibus quaerat sint provident illum molestias dolores debitis, nesciunt
+                officia, cum sed beatae sit corrupti accusamus nemo optio, ducimus quia earum explicabo officiis
+                pariatur voluptatibus! Saepe, atque.
+                Sequi saepe at cumque rem accusamus, placeat enim debitis dolore officiis dignissimos ipsam incidunt
+                iusto natus cum culpa aut? Alias obcaecati doloribus vitae magni corporis sit provident quia numquam
+                voluptates.
+                Vero voluptatibus commodi eius inventore nesciunt obcaecati totam cupiditate. Ut id culpa minus
+                consequatur repudiandae! Expedita rem sit voluptates tempora nesciunt alias saepe est aspernatur omnis
+                voluptatum, adipisci architecto reprehenderit!
+                Ab quis soluta debitis velit possimus molestias a similique tempora harum, corporis id ratione
+                voluptates modi, odit consequatur ipsum quibusdam, praesentium dolores autem excepturi. Voluptas cum
+                ipsa quo inventore sapiente.
+                Cum libero consequuntur repellendus distinctio velit, voluptas eaque quaerat cumque suscipit, sapiente
+                cupiditate corrupti veniam! Voluptas praesentium maiores quia nulla distinctio in cupiditate, sapiente
+                eligendi asperiores! Obcaecati assumenda eum cumque.
+                Quo beatae sapiente cupiditate nesciunt, quidem ex optio, similique nam ut expedita nobis assumenda
+                dolorem aperiam et quod tempore a! Enim quo magni architecto animi eum. Minus, id corporis? Libero!
+                Ipsum, quos fugit. Laudantium a consequatur ut. Quaerat, distinctio assumenda! Deleniti corrupti,
+                voluptates similique dolores molestiae laudantium aperiam doloremque, consectetur animi dolor maiores
+                laborum? Asperiores ex numquam dolorem rerum totam!
+                Aperiam ex eos laudantium unde molestias corrupti mollitia suscipit corporis est, incidunt quisquam
+                fugit cum dicta, tempora sapiente commodi pariatur ad nulla! Animi nihil enim commodi sed vero tenetur
+                tempore.
+                Architecto perspiciatis aspernatur adipisci illum, debitis nesciunt iure. Repellat amet aut optio
+                aperiam! Similique nobis, maxime fuga odit rem atque quidem soluta consectetur voluptate illum itaque,
+                inventore quaerat velit blanditiis.
+                Possimus ex sequi at veritatis, commodi quod quos maiores optio unde ducimus id asperiores iusto ratione
+                esse. Esse sequi perferendis autem optio ipsum dicta pariatur voluptas eligendi, dolore, nulla repellat.
+                Nemo reiciendis sint et quia. Quod debitis aliquam magni sint officia minima vel esse perspiciatis hic,
+                dolor temporibus nihil adipisci repellat cumque mollitia ea tempora nisi, eligendi eveniet libero!
+                Quisquam.</p>
+        </article>
+    </div>
+    <div class="arrow">
+        <i class="far fa-arrow-alt-circle-up"></i>
+    </div>
+    <nav></nav>
+    <script src="script.js"></script>
+</body>
+
+</html>

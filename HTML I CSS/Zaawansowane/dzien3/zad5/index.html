@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Przykładowy projekt</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        nav.desktop,
+        header {
+            height: 360px;
+            float: left;
+        }
+
+        nav.desktop {
+            width: 300px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav.desktop a {
+            display: block;
+            text-decoration: none;
+            line-height: 72px;
+            font-size: 22px;
+            color: black;
+            font-family: 'Arial';
+            padding: 0 5px 0 30px;
+        }
+
+        nav a:hover i {
+            margin-right: 50px;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        nav i {
+            width: 50px;
+            border-right: 2px solid black;
+            margin-right: 30px;
+            transition: .3s;
+        }
+
+        header {
+            width: calc(100% - 300px);
+            background-color: aquamarine;
+            background-image: url("pianino.jpg");
+            background-position: left;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        section {
+            margin-top: 50px;
+        }
+
+        section h1 {
+            font-size: 40px;
+            font-family: "Arial", sans-serif;
+            background-color: #000;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav.desktop {
+            display: block;
+        }
+
+        nav.mobile {
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+            nav.mobile {
+                display: block;
+                position: fixed;
+                width: 72px;
+                height: 100%;
+                background-color: #000;
+                color: white;
+            }
+
+            nav.mobile a {
+                display: block;
+                line-height: 10vh;
+                color: white;
+                font-size: 30px;
+                text-align: center;
+                padding: 0 20%;
+            }
+
+            nav.desktop {
+                display: none;
+            }
+
+            header {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <nav class="desktop">
+            <ul>
+                <li><a href="#"><i class="far fa-play-circle"></i>Start</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i>Oferta</a></li>
+                <li><a href="#"><i class="fas fa-rss"></i>Blog</a></li>
+                <li><a href="#"><i class="far fa-calendar-times"></i>Terminarz</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i>Kontakt</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile">
+            <ul>
+                <li><a href="#"><i class="far fa-play-circle"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-rss"></i></a></li>
+                <li><a href="#"><i class="far fa-calendar-times"></i></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+        <header></header>
+    </div>
+    <section>
+        <h1>Witaj w naszym świecie</h1>
+    </section>
+</body>
+
+</html>

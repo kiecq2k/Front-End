@@ -1,0 +1,18 @@
+/* Reset styli*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Określenie właściwości globalnych */
+
+html {
+  font-family: roboto, arial, sans-serif;
+  /* Przykładowe fonty główne na stronie*/
+  font-size: 10px;
+  /* do wykorzystania w jednostkach rem w innych elementach*/
+  color: #ddd;
+  /* jeśli nie chcemy by czarny był głównym kolorem */
+}

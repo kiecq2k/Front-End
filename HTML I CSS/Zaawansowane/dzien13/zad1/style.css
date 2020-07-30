@@ -1,0 +1,35 @@
+div.wrapper {
+    width: 75vw;
+    margin: 10px auto;
+}
+
+.burger {
+    position: fixed;
+    top: 5%;
+    right: 3%;
+    font-size: 5vw;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+nav>div {
+    background-color: #000;
+    position: absolute;
+    top: -15vw;
+    left: 11vw;
+    width: 75vw;
+    height: 15vw;
+    transition: .3s linear;
+}
+
+.fas {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.show {
+    top: 0;
+}

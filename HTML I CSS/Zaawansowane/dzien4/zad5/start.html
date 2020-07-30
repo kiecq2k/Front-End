@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Duszki</title>
+    <style>
+        span {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            border: 3px solid black;
+            padding: 10px 20px;
+            font-family: arial;
+            cursor: pointer;
+        }
+
+        span:hover {
+            background-color: red;
+            color: white;
+        }
+
+        div {
+            position: absolute;
+            top: 90%;
+            left: 10%;
+            width: 0;
+            height: 0;
+            transition: 1s;
+        }
+
+        div:nth-of-type(2) {
+            transition-delay: 0.2s;
+        }
+
+        div:nth-of-type(3) {
+            transition-delay: 0.4s;
+        }
+
+        div:nth-of-type(4) {
+            transition-delay: 0.6s;
+        }
+
+        div:nth-of-type(5) {
+            transition-delay: 0.8s;
+        }
+
+        div:nth-of-type(6) {
+            transition-delay: 1s;
+        }
+
+        span:hover~div:nth-of-type(1) {
+            top: 50%;
+            left: 50%;
+            width: 50vh;
+            height: 30vh;
+            transform: translate(-50%, -50%);
+            background-color: brown;
+            z-index: 1;
+        }
+
+        span:hover~div:nth-of-type(2) {
+            top: calc(50% - 15vh);
+            left: 50%;
+            width: calc(50vh/1.4144);
+            height: calc(50vh/1.4144);
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: black;
+        }
+
+        span:hover~div:nth-of-type(3) {
+            top: calc(50% + 7.5vh);
+            left: 50%;
+            width: 12vh;
+            height: 15vh;
+            transform: translate(-50%, -50%);
+            background-color: gray;
+            z-index: 2;
+        }
+
+        span:hover~div:nth-of-type(4) {
+            top: calc(50% - 25vh);
+            left: calc(50% + 15vh);
+            width: 4vh;
+            height: 10vh;
+            transform: translate(-50%, -50%);
+            background-color: #333;
+            z-index: 0;
+        }
+
+        span:hover~div:nth-of-type(5) {
+            top: 50%;
+            left: calc(50% - 15vh);
+            width: 12vh;
+            height: 15vh;
+            transform: translate(-50%, -50%) rotate(360deg);
+            background-image: url("https://scontent.fwaw5-1.fna.fbcdn.net/v/t1.0-9/s960x960/73319495_2624103607652431_5203370673153507328_o.jpg?_nc_cat=107&_nc_ohc=6bumnY3guBEAQly0Dxq45ialliI7tHbQTn6ZJnvGDmK4ahz692PV0MaxQ&_nc_ht=scontent.fwaw5-1.fna&oh=f6350fb3edf75c56cb8d118d80f33ec7&oe=5EB264F6");
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 2;
+        }
+
+        span:hover~div:nth-of-type(6) {
+            top: 50%;
+            left: calc(50% + 15vh);
+            width: 12vh;
+            height: 15vh;
+            transform: translate(-50%, -50%) rotate(360deg);
+            background-image: url("https://scontent.fwaw5-1.fna.fbcdn.net/v/t1.0-1/c0.0.720.720a/54522609_1604058049697889_470893552839163904_n.jpg?_nc_cat=102&_nc_ohc=bmE0FniLNysAQlKA45--610vBlamF1XA0lTEenaRYqjVoe6ko5ilxuPww&_nc_ht=scontent.fwaw5-1.fna&oh=23e27738203c1524d39c90f4554ba348&oe=5E6E4ED0");
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <span>Pokaz mi 2 duszkow!</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

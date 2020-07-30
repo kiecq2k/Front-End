@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie 1 - zmiana koloru po najechaniu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            display: none;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        div.bg {
+            background-color: gray;
+            width: 100vw;
+            height: 100vh;
+            transition: 1s;
+        }
+
+        div.circle {
+            width: 5vw;
+            height: 5vw;
+            border: 2px solid white;
+            border-radius: 50%;
+            position: absolute;
+
+        }
+
+        div.circle:hover {
+            cursor: pointer;
+        }
+
+        div.red {
+            top: 10px;
+            left: 10px;
+            background-color: red;
+        }
+
+        div.red:hover~.bg {
+            background-color: red;
+
+        }
+
+
+        div.green {
+            top: 10px;
+            right: 10px;
+            background-color: green;
+        }
+
+        div.green:hover~.bg {
+            background-color: green;
+        }
+
+        div.blue {
+            bottom: 10px;
+            left: 10px;
+            background-color: blue;
+        }
+
+        div.blue:hover~.bg {
+            background-color: blue;
+        }
+
+        div.orange {
+            bottom: 10px;
+            right: 10px;
+            background-color: orange;
+        }
+
+        div.orange:hover~.bg {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red circle"></div>
+    <div class="green circle"></div>
+    <div class="blue circle"></div>
+    <div class="orange circle"></div>
+    <div class="bg">
+        <p class="red">Czerwony</p>
+        <p class="green">Zielony</p>
+        <p class="blue">Niebieski</p>
+        <p class="orange">Pomarańczowy</p>
+    </div>
+</body>
+
+</html>

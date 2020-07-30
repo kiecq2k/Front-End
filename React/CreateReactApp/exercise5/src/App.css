@@ -1,0 +1,19 @@
+form{
+  margin: 20px;
+}
+
+input{
+  display: block;
+}
+
+button{
+  padding: 10px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+span{
+  display: block;
+  color: red;
+  font-size: 10px;
+}

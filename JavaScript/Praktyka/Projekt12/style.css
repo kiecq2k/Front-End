@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+h1.title {
+    text-align: center;
+    margin: 5vh 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+input {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 5vw;
+}
+
+button.submit {
+    padding: 5px;
+    background-color: yellow;
+    border: 3px solid red;
+    cursor: pointer;
+    margin-right: 5vw;
+}
+
+button+label {
+    display: inline-block;
+}
+
+ol {
+    margin: 20px;
+}
